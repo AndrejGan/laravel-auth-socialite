@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dropdown {
+    animation: dropdown 0.2s linear;
+    @apply absolute top-14 right-0 border rounded-b-md min-w-60 flex flex-col gap-0 shadow-xl py-2 bg-white z-50
+}
+
+.dropdown-search {
+    animation: dropdown 0.2s linear;
+    @apply absolute top-11 left-0 border border-t-0 rounded-b-md w-96 flex flex-col gap-0 shadow-xl py-2 bg-white p-3
+}
+
+.dropdown-item {
+    @apply cursor-pointer flex gap-2 items-center hover:bg-gray-100 w-full px-2 py-1
+}
+
+@keyframes dropdown {
+    0% {
+        transform: translateY(4px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
